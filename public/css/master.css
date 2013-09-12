@@ -32,7 +32,25 @@ Text
 	margin-bottom: 36px;
 }
 
+.slides .dragon-fightin img {
+	display: inline-block;
+	max-width: 10%;
+}
+
+.slides .dragon-fightin img.dragon {
+	display: inline-block;
+	max-width: 60%;
+}
+
+.sword {
+	height: 120px;
+	position: absolute;
+	left: 213px;
+	bottom: 60px;
+}
 
 .progress span {
 	background-color: red;
 }
+
+
