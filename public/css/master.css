@@ -37,6 +37,35 @@ Text
 	max-width: 10%;
 	max-height: 200px;
 }
+.slides .last img {
+	display: inline-block;
+	max-width: 10%;
+	max-height: 200px;
+	-webkit-transform: translate3d(0, 400%, 0);
+	-webkit-transform-origin: center 98%;
+	-webkit-animation-name: popin;
+	-webkit-animation-duration: 3600ms;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+.slides .last img:nth-of-type(1) {
+	-webkit-animation-delay: 0;
+}
+.slides .last img:nth-of-type(2) {
+	-webkit-animation-delay: 600ms;
+}
+.slides .last img:nth-of-type(3) {
+	-webkit-animation-delay: 1200ms;
+}
+.slides .last img:nth-of-type(4) {
+	-webkit-animation-delay: 1800ms;
+}
+.slides .last img:nth-of-type(5) {
+	-webkit-animation-delay: 2400ms;
+}
+.slides .last img:nth-of-type(6) {
+	-webkit-animation-delay: 3000ms;
+}
 
 .slides .dragon-fightin img.dragon {
 	display: inline-block;
@@ -57,8 +86,18 @@ Text
 
 @-webkit-keyframes flyin {
 	0% { -webkit-transform: translate3d(-20%,0,0); }
-	50% { -webkit-transform: translate3d(100%,0,0); }
+	25% { -webkit-transform: translate3d(100%,0,0); }
+	30% { -webkit-transform: translate3d(100%,0,0) rotate(-4deg); }
+	50% { -webkit-transform: translate3d(100%,0,0) rotate(4deg); }
+	70% { -webkit-transform: translate3d(100%,0,0) rotate(4deg); }
+	75% { -webkit-transform: translate3d(100%,0,0); }
 	100% { -webkit-transform: translate3d(-20%,0,0); }
+}
+
+@-webkit-keyframes popin {
+	0% { -webkit-transform: translate3d(0,400%,0); }
+	50% { -webkit-transform: translate3d(0,120%,0); }
+	100% { -webkit-transform: translate3d(0,400%,0); }
 }
 
 @-webkit-keyframes jigglin {
@@ -123,7 +162,7 @@ Text
 }
 
 .progress span {
-	background-color: red;
+	background-color: #FF5E99;
 }
 
 .slides .fortunate {
