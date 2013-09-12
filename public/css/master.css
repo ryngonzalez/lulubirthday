@@ -26,7 +26,13 @@ Text
 
 */
 
-h1 {
+.slides section h1 {
 	text-align: center;
 	font-size: 72px;
+	margin-bottom: 36px;
+}
+
+
+.progress span {
+	background-color: red;
 }
