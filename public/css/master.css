@@ -8,9 +8,9 @@ October 4, 2012
 
 body {
 	background: #eee;
-	color: #87040E;
-	font-family: "adobe-text-pro", "Times";
-	text-shadow: 0px 2px 1px #fff;
+	color: #666;
+	font-family: "jubilat", "Times";
+	/*text-shadow: 0px 2px 1px #fff;*/
 }
 .container {
 	width: 800px;
@@ -19,80 +19,6 @@ body {
 	-webkit-perspective: 1000;
 }
 
-.letter {
-	width: 800px;
-	height: 340px;
-	position: absolute;
-	bottom: 20%;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transition: 1.6s;
-}
-
-.letter.flipped {
-	-webkit-transform: rotateY(180deg);
-	bottom: 0;
-}
-
-.letter.hidden {
-	opacity: 0;
-	-webkit-transform: rotate(4deg) rotateY(180deg);
-	bottom: -20%;
-}
-
-.front, .back {
-	position: absolute;
-	-webkit-backface-visibility: hidden;
-}
-/*.front {z-index: 100;}*/
-/*.back {z-index: 1;}*/
-.letter > .front {
-	height: inherit; width: inherit;
-	/*background: url("../images/front.png");*/
-}
-
-.back { 
-}
-
-.letter > .back {
-	height: inherit; width: inherit;
-	/*background: url("../images/back.png");*/
-	-webkit-transform: rotateY(180deg);
-}
-
-/*
-
-Flap
-
-*/
-
-.back {
-	-webkit-perspective: 1000;
-}
-
-.flap {
-	width: 800px;
-	height: 215px;
-	position: absolute;
-	top: 0;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform-origin: 0 7px;
-	-webkit-transition: 1.2s;
-}
-
-.flap.open {
-	-webkit-transform: rotateX(180deg);
-}
-
-.flap > .front {
-	height: inherit; width: inherit;
-	/*background: url("../images/front.png");*/
-}
-
-.flap > .back {
-	height: inherit; width: inherit;
-	/*background: url("../images/back.png");*/
-	-webkit-transform: rotateX(180deg);
-}
 
 /*
 
@@ -103,25 +29,4 @@ Text
 h1 {
 	text-align: center;
 	font-size: 72px;
-}
-
-.text {
-	opacity: 1;
-	-webkit-transition: 1.6s;
-	position: absolute;
-	bottom: 40%;
-	left: 50%;
-	width: 600px;
-	margin-left: -300px;
-
-}
-
-.text.hidden {
-	opacity: 0;
-	bottom: 0%;
-}
-
-p {
-	line-height: 1.4;
-	font-size: 24px;
 }
