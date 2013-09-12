@@ -62,7 +62,7 @@ Text
 
 @-webkit-keyframes firing {
 	0% {-webkit-transform: translate3d(0,0,0);}
-	100% {-webkit-transform: translate3d(-510px,600px,0);}
+	100% {-webkit-transform: translate3d(-610px,600px,0);}
 }
 
 .fire {
