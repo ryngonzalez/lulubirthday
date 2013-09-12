@@ -126,4 +126,10 @@ Text
 	background-color: red;
 }
 
+.slides .fortunate {
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+}
 
